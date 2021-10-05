@@ -40,6 +40,9 @@ def get_premier_league_data(soup, league_id="div_sched_11160"):
                 13- match_report
     """
     df = pd.DataFrame()
+    league_object = soup.find("div", {"id": league_id})
+    if not league_object:
+        return pd.DataFrame()
     for i in soup.find("div", {"id": league_id}):
         tdlist = BeautifulSoup(str(i)).findAll('td')
         if tdlist:

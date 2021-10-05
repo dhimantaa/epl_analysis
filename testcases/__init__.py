@@ -9,6 +9,7 @@ def test_match_data():
         print("TEST PASSED test_match_data")
     else:
         print("TEST FAILED test_match_data")
+    return df
 
 
 def test_player_data():
@@ -19,6 +20,7 @@ def test_player_data():
         print("TEST PASSED test_player_data")
     else:
         print("TEST FAILED test_player_data")
+    return data.return_way_back_data_url(ul, fbref_url, year=year)
 
 
 test_match_data()
