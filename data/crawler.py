@@ -141,17 +141,6 @@ def return_way_back_data_url(ul, year=2019):
     return data_url
 
 
-# Testing of the code
-date = "2021-09-18"
-url = "https://fbref.com/en/matches/{}".format(date)
-df = get_premier_league_data(get_beautiful_object(url))
-player_data = pd.read_html(player_link())
-
-year = 2019
-fbref_url = player_link()
-ul = return_way_back_date_url(fbref_url, year=year)
-print (return_way_back_data_url(ul))
-
 
 
 
