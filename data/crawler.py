@@ -122,7 +122,7 @@ def return_way_back_date_url(fbref_url, year=2021):
     return "https://web.archive.org/__wb/calendarcaptures/2?url={0}&date={1}&groupby=day".format(fbref_url, year)
 
 
-def return_way_back_data_url(ul, year=2019):
+def return_way_back_data_url(ul, fbref_url, year=2019):
     """
     This function will return the wayback data link to capture point in time data
     ul: string wayback date link
